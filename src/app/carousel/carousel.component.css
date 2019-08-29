@@ -1,0 +1,10 @@
+ngb-carousel {
+  overflow: hide;
+  margin: 5px auto 10px auto;
+  background-color: salmon;
+  text-align: center;
+  color: black;
+}
+img {
+  padding: 2vh 0;
+}
