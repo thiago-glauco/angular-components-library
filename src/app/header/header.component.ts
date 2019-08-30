@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  navigation = [
+  navigationButtons = [
     {
       title: "home",
-      icon: "",
+      icon: "home",
+      destination: ""
+    },
+    {
+      title: "about",
+      icon: "home",
       destination: ""
     }
   ]

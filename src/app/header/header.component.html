@@ -5,13 +5,7 @@
   </div>
   <mat-divider></mat-divider>
 <nav fxFlex fxLayout="row" fxHide.lt-sm="true">
-  <a mat-button href=""><mat-icon>home</mat-icon> Home</a>
-  <a mat-button href=""><mat-icon>favorite</mat-icon> O AME</a>
-  <a mat-button href=""><mat-icon>folder_open</mat-icon> Projetos</a>
-  <a mat-button href=""><mat-icon>accessibility_new</mat-icon> Seja Voluntário</a>
-  <a mat-button href=""><mat-icon>card_giftcard</mat-icon> Doações</a>
-  <a mat-button href=""><mat-icon>shopping_cart</mat-icon> Loja</a>
-  <a mat-button href=""><mat-icon>business</mat-icon> Patrocinadores</a>
-  <a mat-button href=""><mat-icon>card_membership</mat-icon> Clube de Vantagens</a>
+  <a mat-button *ngFor="let navigationButton of navigationButtons"  [href]="navigationButton.destination" >
+    <mat-icon>{{navigationButton.icon}}</mat-icon> {{navigationButton.title}}</a> 
 </nav>
 </header>
