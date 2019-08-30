@@ -8,4 +8,9 @@
   <a mat-button *ngFor="let navigationButton of navigationButtons"  [href]="navigationButton.destination" >
     <mat-icon>{{navigationButton.icon}}</mat-icon> {{navigationButton.title}}</a> 
 </nav>
+<button mat-fa [matMenuTriggerFor]="belowMenu" fxHide.gt-xs="true">Below</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
 </header>
