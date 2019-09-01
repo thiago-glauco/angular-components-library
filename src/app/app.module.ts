@@ -49,7 +49,7 @@ import { RoundedCardComponent } from './rounded-card/rounded-card.component';
     MatCardModule,
     NgbModule,
     MatMenuModule,
-    CarouselModule
+    CarouselModule,   
     ],
   declarations: [ AppComponent, HelloComponent, UserSettingsFormComponent, UserDataFormComponent, InputNameComponent, GenericCardComponent, CardLineComponent, HeaderComponent, DonateCardComponent, CarouselComponent, RoundedCardComponent, ],
   bootstrap:    [ AppComponent ]
