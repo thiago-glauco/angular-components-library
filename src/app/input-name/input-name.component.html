@@ -10,7 +10,7 @@
       [required]="inputData.required"
       [minLength]="inputData.maxLength"
       [maxlength]="inputData.maxLength"
-      pattern="^[\wÀ-ú]+(\s[\wÀ-ú]+){1,10}"
+      [pattern]="^[\wÀ-ú]+(\s[\wÀ-ú]+){1,10}"
       #name="ngModel">
       <!--icon and icons position -->
       <mat-icon
