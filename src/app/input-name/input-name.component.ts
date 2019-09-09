@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-input-name',
@@ -19,9 +19,19 @@ export class InputNameComponent implements OnInit {
     pattern: /^[\wÀ-ú]+(\s[\wÀ-ú]+){1,10}/, //padrão recomendado para nomes compostos: ^[\wÀ-ú]+(\s[\wÀ-ú]+){1,10}
   }
 
+  outData = {
+    value: ""
+  }
+
+  @Output() digited = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  userDigit(event: KeyboardEvent) {
+    console.log(this.outData.value);
+    this.digited.emit(this.outData.value)
+  }
 }
