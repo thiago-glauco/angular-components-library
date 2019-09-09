@@ -9,13 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class InputNameComponent implements OnInit {
 
   inputData = {
+    type: "text",
     label: "Testando", //label
     name: "Hello", // name do input
     required: true, // validação
     placeHolder: "teste", //placeholder
     matIconName: "sentiment_very_satisfied", //tem icone?
     matIconPos: "prefix", //posição do icone: 
-    pattern: `^[\wÀ-ú]+(\s[\wÀ-ú]+){1,10}`, //padrão recomendado para nomes compostos: ^[\wÀ-ú]+(\s[\wÀ-ú]+){1,10}
+    pattern: /^[\wÀ-ú]+(\s[\wÀ-ú]+){1,10}/, //padrão recomendado para nomes compostos: ^[\wÀ-ú]+(\s[\wÀ-ú]+){1,10}
   }
 
   constructor() { }
