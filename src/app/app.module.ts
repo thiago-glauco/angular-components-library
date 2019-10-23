@@ -21,6 +21,9 @@ import {MatMenuModule} from '@angular/material/menu';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {CarouselModule} from "ngx-carousel-lib";
 
+//facebook
+import {FacebookModule} from 'ngx-facebook';
+
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { UserSettingsFormComponent } from './user-settings-form/user-settings-form.component';
@@ -50,6 +53,7 @@ import { RoundedCardComponent } from './rounded-card/rounded-card.component';
     NgbModule,
     MatMenuModule,
     CarouselModule,   
+    FacebookModule.forRoot(),
     ],
   declarations: [ AppComponent, HelloComponent, UserSettingsFormComponent, UserDataFormComponent, InputNameComponent, GenericCardComponent, CardLineComponent, HeaderComponent, DonateCardComponent, CarouselComponent, RoundedCardComponent, ],
   bootstrap:    [ AppComponent ]
